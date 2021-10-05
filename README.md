@@ -23,3 +23,16 @@ changes their extension to .CBZ.
 ## Notes
 If you take this script into another one or a project, credits will
 be appreciated. Though it is not an obligation.
+
+## Example
+### 1
+![1](img/1.PNG)
+
+### 2
+![2](img/2.PNG)
+
+### 3
+![3](img/3.PNG)
+
+### 4
+![4](img/4.PNG)
