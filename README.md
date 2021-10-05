@@ -17,7 +17,7 @@ more stable than WinRAR and it is Open-Source, hence free). Go to
 this URL to install it: https://www.7-zip.org/.
 
 ## How do this script works
-This script ZIPs all folders in the root folder of the scsript and
+This script ZIPs all folders in the root folder of the script and
 changes their extension to .CBZ.
 
 ## Notes
