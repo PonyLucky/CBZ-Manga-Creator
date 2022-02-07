@@ -12,9 +12,13 @@ devices with the good application).
 You need to authorize the PowerShell scripts on your computer. Go to
 this URL if you don't know how: https://superuser.com/a/106363.
 
-You will need to install 7zip if not already installed (it is faster,
-more stable than WinRAR and it is Open-Source, hence free). Go to
+You will need to install 7zip if not already installed. Go to
 this URL to install it: https://www.7-zip.org/.
+
+### Why 7Zip
+WinRAR have compatibility problems with my Kobo: My Kobo says I need a password file to open the file. This problem does not occur with 7Zip.
+
+Futhermore it is faster, more stable than WinRAR and Open-Source, hence free.
 
 ## How do this script works
 This script ZIPs all folders in the root folder of the script and
