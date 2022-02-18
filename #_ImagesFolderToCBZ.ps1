@@ -54,11 +54,13 @@ Get-ChildItem "$root" | ForEach-Object {
     $pathFolder = $_.FullName
 
     # Zip the content of the folder
-    & $7zipPath a "$pathFolder.zip" "$pathFolder\*" > $null
+    $oZip = "$pathFolder.zip"
+    & $7zipPath a $oZip "$pathFolder\*" > $null
 
     # Change the extension to CBZ
-    $newName = [System.IO.Path]::ChangeExtension("$pathFolder.zip",".cbz")
-    Move-Item -Path "$pathFolder.zip" -Destination $newName -Force
+    # Move-Item -LiteralPath $oZip $oZip.Replace('.zip', '.cbz') -Force
+    $o = $oZip -Replace ".{4}$"
+    Move-Item -LiteralPath $oZip "$o.cbz" -Force
 
     # If the user asked for deletion of folders
     if ("Y" -eq $isSdel.ToUpper()) {
