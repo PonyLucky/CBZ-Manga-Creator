@@ -65,7 +65,7 @@ Get-ChildItem "$root" | ForEach-Object {
     # If the user asked for deletion of folders
     if ("Y" -eq $isSdel.ToUpper()) {
       # Remove the folder
-      $pathFolder | Remove-Item -Force -Recurse
+      Remove-Item $pathFolder -Force -Recurse
     }
 
     # Tells the user this one is finished converting
