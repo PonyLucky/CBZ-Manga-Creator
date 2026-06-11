@@ -61,6 +61,8 @@ sudo dnf install zip
 
 ### Install the script
 
+This is optionnal:
+
 ```bash
 # Download the script
 curl -o './cbz.sh' https://raw.githubusercontent.com/PonyLucky/CBZ-Manga-Creator/refs/heads/main/cbz.sh
@@ -89,3 +91,5 @@ cbz
 ```
 
 It will convert all sub directories with only images in them in the current directory to CBZ.
+
+If not installed, then put the script in the current directory (the one you have all your image containers into) and run from the terminal `sh cbz.sh`.
